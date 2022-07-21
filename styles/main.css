@@ -1,0 +1,267 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body  {	
+	background-image: url("../images/berry.jpg");
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+}
+
+div#frame {
+	margin: 25px auto;
+	padding: 20px 30px 20px 20px;
+	width: 50%;
+	min-width: 900px;
+	background-color: #ffffff;	
+	background-image: linear-gradient(#ffffff 20%, #fdf7e8 70%, #ffffff 100%);
+	border: 2px solid #009926;
+	border-radius: 8px;
+	box-shadow: 0px 0px 90px 2px #008020;
+}
+
+p {
+	margin: 20px 0px;
+}
+
+a {
+	color: #008020; 
+}
+
+a:link, a:visited { 
+	text-decoration: none; 
+}
+
+a:hover, a:focus { 
+    text-decoration: underline; 
+}
+
+/* Header */
+header {
+	height: 160px;
+	border-bottom: 2px solid #e8b417;
+}
+	
+header img { 
+	float: left; 
+} 
+
+header div#header-line-1 {
+	font-size: 300%;
+	font-weight: bold;	
+	text-align: right;
+	color: #ecc03b;
+	text-shadow: 2px 2px 2px black;
+}
+
+header div#header-line-2 {
+	font-size: 130%;
+	font-weight: bold;
+	text-align: right;
+	font-style: italic;
+	color: #008020;
+}
+
+/* aside */
+aside {
+	width: 230px;
+	float: left;
+	margin: 30px 10px 0px 0px;
+}
+
+aside div.sidebar-title {
+	font-size: 115%;
+	font-weight: bold;
+	color: #d1a215;
+}
+
+aside ul {
+	margin: 15px 0px 0px 15px;
+}
+
+aside ul li {
+	margin: 15px 0px 0px 0px;
+}
+
+aside ul li a{
+	font-style: italic;
+	font-size: 90%;
+}
+
+/* Main */
+main {
+	margin: 20px 0;
+	padding-left: 20px;
+	float: left;
+	width: 638px;
+	min-height: 600px;
+	border-left: 2px solid #e8b417;
+}
+
+main h1 { 
+	margin: 0;
+	font-size: 200%;
+}
+
+main h1:first-letter { 
+	font-size: 240%;
+}
+
+main h2 {
+	margin: 25px 0px;
+	font-size: 125%;
+}
+
+main h3 {	
+	font-size: 110%;
+}
+
+main ul#product-categories {
+	list-style-type: none;
+}
+
+main ul#product-categories li {
+	margin: 35px 0px;
+}
+
+main ul#product-categories h3 {
+	margin-top: 10px;
+}
+
+main ul#product-categories p{
+	margin-top: 5px;
+}
+
+main ul#product-categories img {
+	border: 2px solid #e8b417;
+	border-radius: 10px;
+	box-shadow: 0px 0px 6px 2px #ecc03b;
+}
+
+/* The styles for Forms */
+
+input[type="radio"] {
+	/*
+	- here (re)set the width for the radio button controls to 'auto', and
+	- set the left margin for the radio buttons to add space as per the design
+	*/
+	width: auto; 
+	margin-left: 2.7em;
+	}
+#payment_method label {
+	/* here add the style that will remove the float for the labels beside the
+	radio buttons, so they appear on the right side of the buttons themselves
+	*/
+	float: None;
+	}
+
+/* Adding top and bottom spacing for fieldset */
+fieldset {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+/* Here we are modifying the text which is with the fieldset */
+legend{
+	margin-bottom: 10px; /*Adding space at the bottom*/
+	font-weight: bold; /*Makes the text bold */
+	font-size: 85%; /*Sets teh size of fonts to 85% of current size*/ 
+	color: grey; /*Gives the text the colour as mentioned that is grey*/
+}
+
+/*Here multi-selection used fro label,input and select*/
+label, input, select{
+	font-size: 90%; /*Set the font size to 90% to current size*/
+}
+
+/* Here we are selecting the label and make it move to the left thus the radio button
+	label appear side by side */
+label {
+    float: left; /* Moves it left */
+    width: 12em; /* Specifying the width */
+    text-align: right;
+}
+
+/* Here we are selcting the input element and specifiying the width and spacing to left and bottom */
+input{
+	width: 15em;
+	margin-left: .5em;
+	margin-bottom: .5em;
+}
+
+/* Here I am Specifying the select element and adding spacing */
+select{
+	margin-left: .5em; /* Spacing the left side for select element to be 0.5 of the current size */
+	margin-bottom: .5em; /* Spacing for the bottom and is 0.5 or halft of the current size */
+}
+
+/* Here i am using the pseudoclass to select the required fields in the form */
+:required{
+	border: 2px orange solid; /* This creates a border of 2 px which is solid and is orange in color and it applies to only the required fields*/
+}
+
+:valid{
+	border: 1px solid black;/* This creates a border of 1px to the valid field labels and is in black solid form*/
+}
+
+#month{
+	width: 7em;/* Here the month is slected as an id and has a width of 7 times to the current size*/
+}
+
+#year{
+	width: 5em; /* Here the Year is slected as an id and has a width of 5 times to the current size*/
+}
+
+#submit{
+	width: 10em; /* Here the Submit button is slectesd as an id and has a width of 10 times to the current size*/
+}
+
+#reset{
+	width: 10em; /* Here the Reset buttom is slectesd as an id and has a width of 10 times to the current size*/
+}
+
+
+/* the styles for the navigation menu */
+#nav_menu {
+	margin-top: 2px;
+}
+
+#nav_menu ul {
+	list-style-type: none;
+	position: relative;
+}
+
+#nav_menu ul li {
+	float: left;
+}
+
+#nav_menu ul li a {
+    background-image: linear-gradient(#fdf7e8 15%, #ffffff 55%, #fdf7e8 100%);
+	width: 180px;
+	padding: 1em 0;
+	display: block;
+    text-align: center;    
+    text-decoration: none;  
+	font-weight: bold;
+}
+
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+	color: #d1a215;
+}
+
+#nav_menu a.current, #nav_menu a.current:hover, #nav_menu a.current:focus {
+	color: #d1a215;	
+	font-weight: bold;
+}
+
+/* Footer */
+footer {
+	clear: left;
+	border-top: 2px solid #e8b417;
+}
+
+footer p {
+	font-size: 80%;
+	text-align: center;
+}
